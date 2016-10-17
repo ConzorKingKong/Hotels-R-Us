@@ -5,7 +5,7 @@ var path = require('path')
 var routes = require('./api/routes')
 var bodyParser = require('body-parser')
 
-app.set('port', 3000)
+app.set('port', process.env.$PORT || 3000)
 
 app.use(function(req, res, next) {
   console.log(req.method, req.url)
