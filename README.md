@@ -1,0 +1,1 @@
+https://hotelsrus.herokuapp.com/#/
