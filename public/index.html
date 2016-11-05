@@ -7,13 +7,24 @@
 </head>
 <body>
   <mh-navigation></mh-navigation>
-  <div class="container">
-    <div ng-view></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div ng-view></div>
+    </div>
   </div>
-  <div class="container" style="margin-top: 5em;">
-    <footer class="footer">
-      <div></div>
-    </footer>
+  <div class="container-fluid">
+    <div class="row">
+      <hr />
+      <div class="col-md-4">
+        <a href="http://github.com/conzorkingkong"><div class="github"></div></a>
+      </div>
+      <div class="col-md-4">
+        <a href="http://twitter.com/conzorkingkong"><div class="twitter"></div></a>
+      </div>
+      <div class="col-md-4">
+        <a href="mailto:connor@connorpeshek.me"><div class="email"></div></a>
+      </div>
+    </div>
   </div>
   <script src="jquery/jquery-3.1.0.min.js"></script>
   <script src="node_modules/angular/angular.js"></script>
@@ -29,5 +40,6 @@
   <script src="angular-app/login/login-controller.js"></script>
   <script src="angular-app/auth/auth-factory.js"></script>
   <script src="angular-app/auth/auth-interceptor.js"></script>
+  <script src="angular-app/profile/profile-controller.js"></script>
 </body>
 </html>

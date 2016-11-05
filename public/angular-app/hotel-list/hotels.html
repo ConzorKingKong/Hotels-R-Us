@@ -1,7 +1,7 @@
 <h1 style="text-align: center;">{{vm.title}}</h1>
 
-<ul>
-  <li ng-repeat="hotel in vm.hotels">
+<ul class="hotel-list">
+  <li class="hotel-list-item" ng-repeat="hotel in vm.hotels">
     <a ng-href="#/hotel/{{hotel._id}}">{{hotel.name}}</a>
   </li>
 <ul>
